@@ -4,3 +4,4 @@ telethon
 sqlalchemy
 python-dotenv
 pydantic
+python-multipart
