@@ -11,3 +11,19 @@
 > ```
 > PYTHONPATH=. uvicorn app.main:app --reload
 > ```
+
+## Running test scripts
+
+To run scripts in `app/test-scripts` that import from `app`, use one of the following methods:
+
+- **Recommended:**  
+  ```
+  cd embedded-backend
+  python -m app.test-scripts.create-chat-folder
+  ```
+
+- **Or set PYTHONPATH:**  
+  ```
+  set PYTHONPATH=.
+  python app/test-scripts/create-chat-folder.py
+  ```
